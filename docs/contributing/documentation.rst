@@ -5,12 +5,12 @@ Documentation
 
 As most software projects we also have a lack in documentation. We encourage
 every VyOS user to help us improve our documentation. This will not only be
-beneficial for you (when reading something up) but also for the whole world.
+benefical four you (when reading something up) but also for the whole world.
 
-If you are willing to contribute to our documentation this is the definite
-guide how to do so.
+If you are willing to contribute to our documentation this is the definate
+guid how to do so.
 
-.. note:: In contrast to submitting code patches, there is no requirement that
+.. note:: In contrast to submitting code patches there is no requirement that
    you open up a Phabricator_ task prior to submitting a Pull-Request to the
    documentation.
 
@@ -150,9 +150,9 @@ Please don't use other public address space.
 Custom Sphinx-doc Markup
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-When writing the documentation custom commands have been developed. Please
-make yourself comfortable with those commands as this eases the way we
-render the documentation.
+When writing the cducmentation custom commands have been developed. Please
+make yourself comfortable with those commands as this eases the way how we
+can render the ducumentation.
 
 cfgcmd
 """"""
@@ -171,12 +171,6 @@ descriptive way in the resulting HTML/PDF manual.
      This will configure a static ARP entry always resolving `192.0.2.100` to
      `00:53:27:de:23:aa`.
 
-For a inline configuration level command use ``:cfgcmd:``
-
-.. code-block:: none
-  
-  :cfgcmd:`set interface ethernet eth0`
-
 opcmd
 """""
 
@@ -190,19 +184,13 @@ descriptive way in the resulting HTML/PDF manual.
 
   .. opcmd:: show protocols static arp
 
-     Display all known ARP table entries spanning across all interfaces
-
-For a inline operational level command use ``:opcmd:``
-
-.. code-block:: none
-  
-  :opcmd:`add system image`
+     Display all known ARP table entries spanning accross all interfaces
 
 vytask
 """"""
 
-When referencing to VyOS Phabricator Tasks, there is a custom Sphinx Markup
-command called ``vytask`` which automatically renders to a proper Phabricator
+When referencing to VyOS Phabricator Tasks, there is a custom Spinx Markup
+command called ``vytask`` which automatically reners to a proper Phabricator
 URL. This is heavily used in the :ref:`release-notes` section.
 
 .. code-block:: none

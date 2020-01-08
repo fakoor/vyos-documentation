@@ -1,7 +1,7 @@
 # Must be run with --privileged flag
 # Recommended to run the container with a volume mapped
 # in order to easy exprort images built to "external" world
-FROM debian:buster
+FROM debian:stretch
 LABEL authors="VyOS Maintainers <maintainers@vyos.io>"
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -16,7 +16,9 @@ RUN apt-get update && apt-get install -y \
     git \
     mc \
     make \
+    python3-sphinx \
     python3-pip \
+    python-sphinx-rtd-theme \
     latexmk \
     texlive-latex-recommended \
     texlive-fonts-recommended \
@@ -27,10 +29,6 @@ RUN apt-get update && apt-get install -y \
     curl \
     dos2unix
 
-
-
-RUN pip3 install Sphinx
-RUN pip3 install sphinx-rtd-theme
 RUN pip3 install sphinx-autobuild
 
 # Cleanup

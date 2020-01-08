@@ -1,7 +1,5 @@
 # python virtualenv
 venv/
-ENV/
-.venv
 
 # put various editor ignores here
 .vscode/
@@ -9,14 +7,3 @@ ENV/
 *.vpw
 *.vpwhist
 *.vtg
-
-# python cache files
-*.pyc
-__pychache__
-
-# dotenv
-.env
-.envrc
-
-# os specific
-.DS_Store
