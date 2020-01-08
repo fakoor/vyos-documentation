@@ -57,15 +57,7 @@ Address
 
 .. cfgcmd:: set interfaces vxlan <interface> ipv6 address autoconf
 
-   :abbr:`SLAAC (Stateless Address Autoconfiguration)`
-   :rfc:`4862`. IPv6 hosts can configure themselves automatically when connected
-   to an IPv6 network using the Neighbor Discovery Protocol via :abbr:`ICMPv6
-   (Internet Control Message Protocol version 6)` router discovery messages.
-   When first connected to a network, a host sends a link-local router
-   solicitation multicast request for its configuration parameters; routers
-   respond to such a request with a router advertisement packet that contains
-   Internet Layer configuration parameters.
-
+   .. include:: common-ipv6-addr-autoconf.txt
 
 .. cfgcmd:: set interfaces vxlan <interface> ipv6 address eui64 <prefix>
 
@@ -88,11 +80,13 @@ Address
    Multicast group address for VXLAN interface. VXLAN tunnels can be built
    either via Multicast or via Unicast.
 
+   Both IPv4 and IPv6 multicast is possible.
+
 
 .. cfgcmd:: set interfaces vxlan <interface> remote <address>
 
-   IPv4 remote address of the VXLAN tunnel. Alternative to multicast, the
-   remote IPv4 address of the VXLAN tunnel can set directly.
+   IPv4/IPv6 remote address of the VXLAN tunnel. Alternative to multicast, the
+   remote IPv4/IPv6 address can set directly.
 
 
 .. cfgcmd:: set interfaces vxlan <interface> port <port>
